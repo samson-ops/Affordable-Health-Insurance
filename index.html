@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Affordable Health Insurance Advisors | Boca Raton, FL</title>
+<meta name="description" content="Independent health insurance agency in Boca Raton, Florida. Free help comparing ACA Marketplace, Medicare, group, dental, and short-term plans. Call (866) 542-5577.">
+<link rel="icon" href="images/logo.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,600;0,6..12,700;0,6..12,800;1,6..12,400&display=swap">
+<style>
+  /* Layout: conventional agency site — white header with logo, navy hero band, green for buttons, light blue for small accents. */
+  :root {
+    --bg: #ffffff;
+    --fg: #1d2b3a;
+    --muted: #5a6a7a;
+    --line: #dbe3ea;
+    --navy: #1b4a8c;
+    --navy-deep: #123666;
+    --green: #5fae3a;
+    --green-deep: #4b9a2a;
+    --sky: #2ba3d8;
+    --tint: #eef4fb;
+    --white: #ffffff;
+    --font: "Nunito Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg: #0f1823; --fg: #e8eef4; --muted: #a9b6c3; --line: #2a3a4c; --navy: #163d75; --navy-deep: #0e2b55; --tint: #172331; --white: #ffffff; color-scheme: dark; }
+  }
+  :root[data-theme="dark"] { --bg: #0f1823; --fg: #e8eef4; --muted: #a9b6c3; --line: #2a3a4c; --navy: #163d75; --navy-deep: #0e2b55; --tint: #172331; --white: #ffffff; color-scheme: dark; }
+
+  * { box-sizing: border-box; }
+  body { background: var(--bg); color: var(--fg); font-family: var(--font); font-size: 17px; line-height: 1.6; }
+  body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
+  h1, h2, h3 { margin: 0; line-height: 1.15; text-wrap: balance; font-weight: 800; }
+  h1 { font-size: clamp(2rem, 4.6vw, 3.2rem); }
+  h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); color: var(--navy); }
+  h3 { font-size: 1.2rem; color: var(--navy); }
+  p { margin: 0; }
+  a { color: var(--navy); }
+  img { max-width: 100%; height: auto; display: block; }
+  .wrap { max-width: 1100px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  section { padding-block: 64px; }
+  .center { text-align: center; }
+  .sub { color: var(--muted); font-size: 1.1rem; max-width: 42rem; margin-top: 10px; }
+  .center .sub { margin-inline: auto; }
+  .btn { display: inline-block; font: 700 1rem var(--font); padding: 14px 26px; border-radius: 6px; text-decoration: none; border: 2px solid transparent; cursor: pointer; }
+  .btn-green { background: var(--green); color: var(--white); border-color: var(--green); }
+  .btn-green:hover { background: var(--green-deep); border-color: var(--green-deep); }
+  .btn-outline { background: transparent; color: var(--white); border-color: rgba(255,255,255,.7); }
+  .btn-outline:hover { background: rgba(255,255,255,.12); }
+  .btn:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible, summary:focus-visible { outline: 3px solid var(--sky); outline-offset: 2px; }
+
+  /* Header */
+  header { background: var(--bg); border-bottom: 1px solid var(--line); position: sticky; top: env(safe-area-inset-top, 0px); z-index: 9; }
+  header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding-block: 10px; }
+  header .logo img { height: 64px; width: auto; }
+  header nav { display: flex; gap: 26px; }
+  header nav a { text-decoration: none; color: var(--fg); font-weight: 600; font-size: 0.98rem; }
+  header nav a:hover { color: var(--green); }
+  header .btn { padding: 10px 18px; }
+  @media (max-width: 900px) { header nav { display: none; } header .logo img { height: 52px; } }
+  @media (max-width: 460px) { header .btn { display: none; } }
+
+  /* Hero */
+  .hero { background: var(--navy); color: var(--white); padding-block: 80px; }
+  .hero .wrap { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 48px; align-items: center; }
+  @media (max-width: 860px) { .hero .wrap { grid-template-columns: 1fr; } }
+  .hero .wrap > * { min-width: 0; }
+  .hero p { color: #d6e2f3; font-size: 1.15rem; margin-top: 18px; max-width: 36rem; }
+  .hero .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+  .hero-aside { background: var(--navy-deep); border-radius: 10px; padding: 26px; display: grid; gap: 14px; }
+  .hero-aside .big { font-size: 2rem; font-weight: 800; color: var(--white); line-height: 1.1; user-select: all; }
+  .hero-aside .lbl { font-size: 0.85rem; text-transform: uppercase; letter-spacing: .06em; color: var(--sky); font-weight: 700; }
+  .hero-aside ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 8px; color: #d6e2f3; }
+  .hero-aside li { padding-left: 26px; position: relative; }
+  .hero-aside li::before { content: ""; position: absolute; left: 0; top: 7px; width: 14px; height: 14px; border-radius: 50%; background: var(--green); }
+
+  /* Alert bar */
+  .alert { background: var(--green); color: var(--white); font-weight: 600; text-align: center; padding-block: 12px; }
+  .alert .wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 28px; }
+
+  /* Services */
+  .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 40px; }
+  @media (max-width: 900px) { .grid3 { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 580px) { .grid3 { grid-template-columns: 1fr; } }
+  .svc { border-top: 4px solid var(--green); background: var(--tint); padding: 24px; display: grid; gap: 10px; align-content: start; min-width: 0; }
+  .svc p { color: var(--muted); font-size: 0.98rem; }
+  .svc .when { font-size: 0.88rem; font-weight: 700; color: var(--sky); }
+
+  /* Steps */
+  .steps-band { background: var(--tint); }
+  .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin-top: 40px; }
+  @media (max-width: 760px) { .steps { grid-template-columns: 1fr; } }
+  .step { display: grid; gap: 10px; min-width: 0; }
+  .step .num { width: 48px; height: 48px; border-radius: 50%; background: var(--navy); color: var(--white); font-weight: 800; font-size: 1.3rem; display: grid; place-items: center; }
+  .step p { color: var(--muted); }
+
+  /* Why */
+  .why .wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+  @media (max-width: 860px) { .why .wrap { grid-template-columns: 1fr; } }
+  .why .wrap > * { min-width: 0; }
+  .why .text { display: grid; gap: 16px; }
+  .why .text p { color: var(--fg); }
+  .dates { border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+  .dates .hd { background: var(--navy); color: var(--white); font-weight: 800; padding: 14px 20px; }
+  .dates dl { margin: 0; padding: 8px 20px; display: grid; grid-template-columns: 7ch 1fr; gap: 0 16px; }
+  .dates dt, .dates dd { padding-block: 10px; border-bottom: 1px solid var(--line); margin: 0; }
+  .dates dt { font-weight: 800; color: var(--green-deep); font-variant-numeric: tabular-nums; }
+  .dates dt:nth-last-of-type(1), .dates dd:last-of-type { border-bottom: 0; }
+  .dates .note { padding: 12px 20px 18px; color: var(--muted); font-size: 0.92rem; }
+
+  /* FAQ */
+  .faq { max-width: 760px; margin: 32px auto 0; border-top: 1px solid var(--line); }
+  details { border-bottom: 1px solid var(--line); }
+  summary { cursor: pointer; padding-block: 16px; font-weight: 700; list-style: none; display: flex; justify-content: space-between; gap: 12px; color: var(--navy); }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "+"; color: var(--green); font-size: 1.5rem; line-height: 1; flex: none; font-weight: 400; }
+  details[open] summary::after { content: "–"; }
+  details p { padding-bottom: 18px; color: var(--muted); }
+
+  /* Quote */
+  .quote { background: var(--navy); color: var(--white); }
+  .quote .wrap { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 48px; align-items: start; }
+  @media (max-width: 860px) { .quote .wrap { grid-template-columns: 1fr; } }
+  .quote .wrap > * { min-width: 0; }
+  .quote h2 { color: var(--white); }
+  .quote p { color: #d6e2f3; margin-top: 12px; }
+  .quote .big { font-size: 1.8rem; font-weight: 800; color: var(--white); margin-top: 20px; user-select: all; }
+  form { background: var(--bg); color: var(--fg); border-radius: 10px; padding: 28px; display: grid; gap: 14px; }
+  .row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  @media (max-width: 480px) { .row { grid-template-columns: 1fr; } }
+  .f { display: grid; gap: 5px; min-width: 0; }
+  .f label { font-size: 0.9rem; font-weight: 700; }
+  .f input, .f select, .f textarea { font: inherit; padding: 11px 12px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--fg); width: 100%; }
+  .fine { color: var(--muted); font-size: 0.8rem; line-height: 1.45; }
+  .done { background: var(--tint); color: var(--green-deep); font-weight: 700; padding: 14px; border-radius: 6px; }
+
+  footer { background: var(--navy-deep); color: #b9c8dc; padding-block: 40px; font-size: 0.85rem; }
+  footer .wrap { display: grid; gap: 16px; }
+  footer .logo-wrap { background: var(--white); display: inline-block; padding: 8px 14px; border-radius: 6px; justify-self: start; }
+  footer .logo-wrap img { height: 48px; width: auto; }
+  footer .links { display: flex; flex-wrap: wrap; gap: 18px; }
+  footer .links a { color: var(--white); text-decoration: none; font-weight: 600; }
+  footer .links a:hover { text-decoration: underline; }
+</style>
+</head>
+<body style="margin:0">
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top"><img src="images/logo.png" alt="Affordable Health Insurance Advisors"></a>
+    <nav>
+      <a href="#plans">Coverage</a>
+      <a href="#how">How It Works</a>
+      <a href="#why">Why Us</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-green" href="#contact">Get a Free Quote</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Affordable health coverage for you, your family, and your business.</h1>
+        <p>We're an independent agency in Boca Raton, Florida. We compare plans from the leading carriers, find every subsidy you qualify for, and handle your enrollment from start to finish. Our service is free, and your premium is the same as buying direct.</p>
+        <div class="actions">
+          <a class="btn btn-green" href="#contact">Get a Free Quote</a>
+          <a class="btn btn-outline" href="#plans">See Coverage Options</a>
+        </div>
+      </div>
+      <div class="hero-aside">
+        <span class="lbl">Speak with a licensed agent</span>
+        <span class="big">(866) 542-5577</span>
+        <ul>
+          <li>No fees, ever</li>
+          <li>Individual, family, Medicare &amp; group plans</li>
+          <li>Support all year, not just at enrollment</li>
+          <li>Monday–Friday, 9am–6pm ET</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="alert">
+    <div class="wrap">
+      <span>Medicare Annual Enrollment is open now through December 7</span>
+      <span>ACA Open Enrollment begins November 1</span>
+    </div>
+  </div>
+
+  <section id="plans">
+    <div class="wrap">
+      <div class="center">
+        <h2>Coverage We Offer</h2>
+        <p class="sub">One agent for every stage of life. We'll tell you what's actually available in your county before we quote anything.</p>
+      </div>
+      <div class="grid3">
+        <div class="svc"><h3>Individual &amp; Family Plans</h3><p>ACA Marketplace plans with premium tax credits applied up front, plus off-exchange options. Bronze through Platinum, HMO and PPO.</p><span class="when">Open Enrollment: Nov 1 – Jan 15</span></div>
+        <div class="svc"><h3>Medicare Advantage</h3><p>All-in-one plans for age 65+ or on disability, usually including drug coverage, often with a $0 monthly premium.</p><span class="when">Annual Enrollment: Oct 15 – Dec 7</span></div>
+        <div class="svc"><h3>Medicare Supplement &amp; Part D</h3><p>Medigap Plans G and N for predictable costs with any doctor who takes Medicare, plus Part D drug plans matched to your prescriptions.</p><span class="when">Supplement: year-round · Part D: Oct 15 – Dec 7</span></div>
+        <div class="svc"><h3>Small Business Group Plans</h3><p>Group health for 2–50 employees, including level-funded plans and ICHRA setups that fit a small-business budget.</p><span class="when">Enroll year-round</span></div>
+        <div class="svc"><h3>Short-Term Medical</h3><p>Between jobs or waiting on employer benefits? Temporary coverage that can start as soon as tomorrow.</p><span class="when">Enroll year-round</span></div>
+        <div class="svc"><h3>Dental, Vision &amp; Supplemental</h3><p>Standalone dental and vision, plus accident, critical illness, and hospital indemnity plans that pay cash directly to you.</p><span class="when">Enroll year-round</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="steps-band" id="how">
+    <div class="wrap">
+      <div class="center">
+        <h2>How It Works</h2>
+        <p class="sub">Most people are enrolled after one 20-minute call.</p>
+      </div>
+      <div class="steps">
+        <div class="step"><span class="num">1</span><h3>Tell us about your household</h3><p>Who needs coverage, your ZIP code, your estimated income, and the doctors and prescriptions you want to keep.</p></div>
+        <div class="step"><span class="num">2</span><h3>Compare your best options</h3><p>We bring back two or three plans that fit, with the real monthly cost after subsidies, the deductible, and whether your doctors are in network.</p></div>
+        <div class="step"><span class="num">3</span><h3>Enroll and keep us on speed dial</h3><p>We submit the application and confirm your start date. For claims, ID cards, or income changes, you call us, not a 1-800 number.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why" id="why">
+    <div class="wrap">
+      <div class="text">
+        <h2>Why Work With an Independent Agent?</h2>
+        <p>Insurance carriers pay licensed agents a commission that is already built into every plan's price. You pay the same premium whether you use us or go direct. The difference is that you get someone who has read the fine print, checks your doctors and prescriptions against each plan, and picks up the phone when you have a problem next year.</p>
+        <p>We represent multiple carriers, so our recommendation is based on what fits you, not on a single company's product line. If there's a plan in your area we can't offer, we'll tell you.</p>
+        <p><a class="btn btn-green" href="#contact">Talk to an Agent</a></p>
+      </div>
+      <div class="dates">
+        <div class="hd">Important Dates This Season</div>
+        <dl>
+          <dt>Oct 15</dt><dd>Medicare Annual Enrollment opens</dd>
+          <dt>Nov 1</dt><dd>ACA Open Enrollment opens for 2027 plans</dd>
+          <dt>Dec 7</dt><dd>Medicare Annual Enrollment closes</dd>
+          <dt>Dec 15</dt><dd>Enroll by this date for ACA coverage starting Jan 1</dd>
+          <dt>Jan 15</dt><dd>ACA Open Enrollment closes in most states</dd>
+        </dl>
+        <p class="note">Missed a deadline? A move, marriage, new baby, or loss of employer coverage opens a 60-day Special Enrollment Period. Turning 65 opens a 7-month window around your birthday.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <div class="center"><h2>Frequently Asked Questions</h2></div>
+      <div class="faq">
+        <details open><summary>Is it really free to use an agent?</summary><p>Yes. The carrier pays our commission, and that commission is already included in every plan's premium. There is no markup and no separate fee.</p></details>
+        <details><summary>Can I keep my current doctor?</summary><p>Often, but networks change every year. We verify your specific doctors against each plan before you enroll rather than assuming.</p></details>
+        <details><summary>How do subsidies work?</summary><p>Premium tax credits are based on your household size and estimated income for the year and are applied to your monthly premium in advance. We help you estimate accurately and report changes so you don't owe money back at tax time.</p></details>
+        <details><summary>I'm self-employed and my income varies. Can I still qualify?</summary><p>Yes, and that describes many of our clients. We help you set a reasonable estimate and update it during the year. Premiums are usually tax-deductible for the self-employed; confirm with your tax preparer.</p></details>
+        <details><summary>I'm turning 65. When should I start?</summary><p>Reach out three to four months before your birthday month. That leaves time to compare Advantage and Supplement options and enroll in Part B without a late penalty.</p></details>
+        <details><summary>Will you sell my information?</summary><p>No. Your details go only to the carrier you choose to enroll with.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="quote" id="contact">
+    <div class="wrap">
+      <div>
+        <h2>Get Your Free Quote</h2>
+        <p>Fill out the form and a licensed agent will call you within one business day with plan options for your area. Prefer to talk now?</p>
+        <div class="big">(866) 542-5577</div>
+        <p>Monday–Friday, 9am–6pm ET. Extended hours during Open Enrollment.</p>
+        <p>hello@affordablehealthadvisors.org</p>
+      </div>
+      <form id="qform" novalidate>
+        <div class="row">
+          <div class="f"><label for="first">First name</label><input id="first" name="first" autocomplete="given-name" required></div>
+          <div class="f"><label for="last">Last name</label><input id="last" name="last" autocomplete="family-name" required></div>
+        </div>
+        <div class="row">
+          <div class="f"><label for="zip">ZIP code</label><input id="zip" name="zip" inputmode="numeric" maxlength="5" autocomplete="postal-code" required></div>
+          <div class="f"><label for="dob">Date of birth</label><input id="dob" name="dob" type="date" autocomplete="bday"></div>
+        </div>
+        <div class="f"><label for="need">I'm looking for</label>
+          <select id="need" name="need">
+            <option>Individual or family plan</option><option>Medicare</option><option>Small business group plan</option><option>Short-term coverage</option><option>Dental or vision</option><option>Not sure yet</option>
+          </select>
+        </div>
+        <div class="row">
+          <div class="f"><label for="tel">Phone</label><input id="tel" name="phone" type="tel" autocomplete="tel" required></div>
+          <div class="f"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email"></div>
+        </div>
+        <div class="f"><label for="msg">Anything we should know? (optional)</label><textarea id="msg" name="msg" rows="3"></textarea></div>
+        <div><button class="btn btn-green" type="submit" id="send">Request My Quote</button></div>
+        <p class="fine">By submitting, you agree that a licensed agent from Affordable Health Insurance Advisors may contact you by phone, text, or email about insurance options. Consent is not a condition of purchase. We never sell your information.</p>
+        <div class="done" id="done" hidden>Thank you. An agent will call you within one business day.</div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="logo-wrap"><img src="images/logo.png" alt="Affordable Health Insurance Advisors"></div>
+    <div class="links"><a href="#plans">Coverage</a><a href="#how">How It Works</a><a href="#faq">FAQ</a><a href="#contact">Contact</a><a href="#top">Privacy Policy</a></div>
+    <p>Affordable Health Insurance Advisors · Boca Raton, Florida · (866) 542-5577 · hello@affordablehealthadvisors.org</p>
+    <p>Affordable Health Insurance Advisors is an independent, licensed insurance agency and is not connected with or endorsed by the U.S. government or the federal Medicare program. We do not offer every plan available in your area. Any information we provide is limited to the plans we offer in your area. Please contact Medicare.gov or 1-800-MEDICARE to get information on all of your options.</p>
+    <p>© 2026 Affordable Health Insurance Advisors. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var form = document.getElementById('qform');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var ok = true;
+      form.querySelectorAll('[required]').forEach(function (el) {
+        var bad = !el.value.trim() || (el.id === 'zip' && !/^\d{5}$/.test(el.value));
+        el.style.borderColor = bad ? '#c0392b' : '';
+        if (bad) ok = false;
+      });
+      if (!ok) return;
+      document.getElementById('send').hidden = true;
+      document.getElementById('done').hidden = false;
+    });
+  })();
+</script>
+</body>
+</html>
